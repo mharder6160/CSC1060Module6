@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Arial;}
+{\f2\fnil\fcharset0\fprq0 Times New Roman;}
+{\f3\fnil\fcharset0\fprq0 Verdana;}
+{\f4\fnil\fcharset0\fprq0 Courier New;}
+{\f5\fnil\fcharset1\fprq0 Courier New;}
+}
+{\colortbl;
+\red0\green127\blue163;
+\red0\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\loch\af1\dbch\f1\fs32\cf2\lang1033\level1 heading 1;}
+{\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\level2 heading 2;}
+{\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\level3 heading 3;}
+{\s4\li2160\loch\af1\dbch\f1\fs28\cf2\lang1033\level4 heading 4;}
+{\s5\li2880\loch\af1\dbch\f1\fs28\cf2\lang1033\level5 heading 5;}
+{\s6\li3600\loch\af1\dbch\f1\fs28\cf2\lang1033\level6 heading 6;}
+{\s7\li4320\loch\af1\dbch\f1\fs28\cf2\lang1033\level7 heading 7;}
+{\s8\li5040\loch\af1\dbch\f1\fs28\cf2\lang1033\level8 heading 8;}
+{\s9\li5760\loch\af1\dbch\f1\fs28\cf2\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Introduction to Java Programming and Data Structures\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f1\fs40\cf1 Thirteenth Edition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\b\dbch\af1\loch\f1\fs60 Chapter }{\b\dbch\af1\loch\f1\fs60 5}{\b\dbch\af1\loch\f1\fs60 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\dbch\af1\loch\f1\fs44 Loops\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qr {\dbch\af3\loch\f3\fs24 Copyright \'a9 }{\dbch\af3\loch\f3\fs24 2024 }{\dbch\af3\loch\f3\fs24 Pearson Education, Inc. All Rights Reserved\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Motivations\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Suppose that you need to print a string (e.g., "Welcome to Java!") a hundred times. It would be tedious to have to write the following statement a hundred times:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 System.out.println}{\dbch\af1\loch\f4\fs48 ("Welcome to Java!");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 So, how do you solve this problem?\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Opening Problem\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Problem:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Introducing }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loops\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 int count = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 while (count < 100) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 System.out.println}{\b\dbch\af1\loch\f4\fs48 ("Welcome to Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 count++;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objectives }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.1}{\dbch\af1\loch\f1\fs36  To write programs for executing statements repeatedly using a}{\b\dbch\af1\loch\f4\fs36  while }{\dbch\af1\loch\f1\fs36 loop (\'a75.2).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.2 }{\dbch\af1\loch\f1\fs36 To write loops for the guessing number problem (\'a75.3).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.3}{\dbch\af1\loch\f1\fs36  To follow the loop design strategy to develop loops (\'a75.4).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.4}{\dbch\af1\loch\f1\fs36  To control a loop with a sentinel value (\'a75.4).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.5}{\dbch\af1\loch\f1\fs36  To obtain large input from a file using input redirection rather than typing from the keyboard (\'a75.5).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.6}{\dbch\af1\loch\f1\fs36  To write loops using }{\b\dbch\af1\loch\f4\fs36 do-while}{\dbch\af1\loch\f1\fs36  statements (\'a75.6).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.7}{\dbch\af1\loch\f1\fs36  To write loops using }{\b\dbch\af1\loch\f4\fs36 for}{\dbch\af1\loch\f1\fs36  statements (\'a75.7).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objectives }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.8}{\dbch\af1\loch\f1\fs36  To discover the similarities and differences of three types of loop statements (\'a75.8).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.9}{\dbch\af1\loch\f1\fs36  To write }{\dbch\af1\loch\f4\fs36 nested}{\dbch\af1\loch\f1\fs36  loops (\'a75.9).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.10}{\dbch\af1\loch\f1\fs36  To learn the techniques for minimizing numerical errors (\'a75.10).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.11}{\dbch\af1\loch\f1\fs36  To learn loops from a variety of examples (}{\b\dbch\af1\loch\f4\fs36 G}{\b\dbch\af1\loch\f4\fs2  }{\b\dbch\af1\loch\f4\fs36 C}{\b\dbch\af1\loch\f4\fs2  }{\b\dbch\af1\loch\f4\fs36 D}{\dbch\af1\loch\f4\fs36 , }{\b\dbch\af1\loch\f4\fs36 FutureTuition}{\dbch\af1\loch\f4\fs36 , }{\b\dbch\af1\loch\f4\fs36 Dec2Hex}{\dbch\af1\loch\f1\fs36 ) (\'a75.11).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.12}{\dbch\af1\loch\f1\fs36  To implement program control with }{\b\dbch\af1\loch\f4\fs36 break}{\dbch\af1\loch\f1\fs36  and }{\b\dbch\af1\loch\f4\fs36 continue}{\dbch\af1\loch\f1\fs36  (\'a75.12).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.13 }{\dbch\af1\loch\f1\fs36 To process characters in a string using a loop in a case study for checking palindrome (\'a75.13).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 5.14}{\dbch\af1\loch\f1\fs36  To write a program that displays prime numbers (\'a75.14).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop Flow Chart\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (1 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (2 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (3 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (4 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (5 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (6 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (7 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (8 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (9 of 9)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Repeat Addition Until Correct\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Recall that Listing 3.1 AdditionQuiz.java gives a program that prompts the user to enter an answer for a question on addition of two single digits. Using a loop, you can now rewrite the program to let the user enter a new answer until it is correct.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 RepeatAdditionQuiz}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Guessing Numbers\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Write a program that randomly generates an integer between }{\b\dbch\af1\loch\f1\fs48 0}{\dbch\af1\loch\f1\fs48  and }{\b\dbch\af1\loch\f1\fs48 100}{\dbch\af1\loch\f1\fs48 , inclusive. The program prompts the user to enter a number continuously until the number matches the randomly generated number. For each user input, the program tells the user whether the input is too low or too high, so the user can choose the next input intelligently. Here is a sample run:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 GuessNumberOneTime}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 GuessNumber}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: An Advanced Math Learning Tool\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The Math subtraction learning tool program generates just one question for each run. You can use a loop to generate questions repeatedly. This example gives a program that generates five questions and reports the number of the correct answers after a student answers all five questions.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 SubtractionQuizLoop}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Ending a Loop with a Sentinel Value\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Often the number of times a loop is executed is not predetermined. You may use an input value to signify the end of the loop. Such a value is known as a }{\b\dbch\af1\loch\f1\fs48 sentinel value}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Write a program that reads and calculates the sum of an unspecified number of integers. The input 0 signifies the end of the input.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 SentinelValue}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Caution }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Don\'92t use floating-point values for equality checking in a loop control. Since floating-point values are approximations for some values, using them could result in imprecise counter values and inaccurate results. Consider the following code for computing 1 + 0.9 + 0.8 + ... + 0.1:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 double}{\dbch\af1\loch\f4\fs40  item = 1; }{\b\dbch\af1\loch\f4\fs40 double}{\dbch\af1\loch\f4\fs40  sum = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 while}{\dbch\af1\loch\f4\fs40  (item != 0) \'7b // No guarantee item will be 0\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 sum += item;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 item \uc1\u8722-= 0.1;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 System.out.println}{\dbch\af1\loch\f4\fs40 (sum);\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 do-while}{\b\dbch\af1\loch\f1\fs72\cf1  Loop\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 do \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs44 // Loop body;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs44 Statement(s);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 \'7d while (loop-continuation-condition);\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loops\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (1 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (2 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (3 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (4 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (5 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (6 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (7 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (8 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (9 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace }{\b\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop }{\dbch\af1\loch\f1\fs40\cf1 (10 of 10)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Note }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 The }{\b\dbch\af1\loch\f1\fs40 initial-action}{\dbch\af1\loch\f1\fs40  in a }{\b\dbch\af1\loch\f4\fs40 for}{\dbch\af1\loch\f1\fs40  loop can be a list of zero or more comma-separated expressions. The }{\b\dbch\af1\loch\f1\fs40 action-after-each-iteration}{\dbch\af1\loch\f1\fs40  in a }{\b\dbch\af1\loch\f4\fs40 for}{\dbch\af1\loch\f1\fs40  loop can be a list of zero or more comma-separated statements. Therefore, the following two }{\b\dbch\af1\loch\f4\fs40 for}{\dbch\af1\loch\f1\fs40  loops are correct. They are rarely used in practice, however.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 for (int i = 1; i < 100; System.out.println(i++));\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 for (int i = 0, j = 0; (i + j < 10); i++, j++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs40 // Do something\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Note }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 If the }{\b\dbch\af1\loch\f1\fs48 loop-continuation-condition}{\dbch\af1\loch\f1\fs48  in a }{\b\dbch\af1\loch\f4\fs48 for}{\dbch\af1\loch\f1\fs48  loop is omitted, it is implicitly true. Thus the statement given below in (a), which is an infinite loop, is correct. Nevertheless, it is better to use the equivalent loop in (b) to avoid confusion:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Caution }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Adding a semicolon at the end of the }{\b\dbch\af1\loch\f4\fs48 for}{\dbch\af1\loch\f1\fs48  clause before the loop body is a common mistake, as shown below:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Caution }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Similarly, the following loop is also wrong:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 In the case of the }{\dbch\af1\loch\f4\fs44 do}{\dbch\af1\loch\f1\fs44  loop, the following semicolon is needed to end the loop.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Which Loop to Use?\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs36 The three forms of loop statements, }{\b\dbch\af1\loch\f4\fs36 while}{\dbch\af1\loch\f1\fs36 , }{\b\dbch\af1\loch\f4\fs36 do-while}{\dbch\af1\loch\f1\fs36 , and }{\b\dbch\af1\loch\f4\fs36 for}{\dbch\af1\loch\f1\fs36 , are expressively equivalent; that is, you can write a loop in any of these three forms. For example, a }{\b\dbch\af1\loch\f4\fs36 while}{\dbch\af1\loch\f1\fs36  loop in (a) in the following figure can always be converted into the following }{\b\dbch\af1\loch\f4\fs36 for}{\dbch\af1\loch\f1\fs36  loop in (b):\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs36 A }{\dbch\af1\loch\f4\fs36 for}{\dbch\af1\loch\f1\fs36  loop in (a) in the following figure can generally be converted into the following }{\dbch\af1\loch\f4\fs36 while}{\dbch\af1\loch\f1\fs36  loop in (b) except in certain special cases (see Review Question 3.19 for one of them):\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Recommendations\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Use the one that is most intuitive and comfortable for you. In general, a for loop may be used if the number of repetitions is known, as, for example, when you need to print a message 100 times. A }{\dbch\af1\loch\f1\fs48 while}{\dbch\af1\loch\f1\fs48  loop may be used if the number of repetitions is not known, as in the case of reading the numbers until the input is 0. A }{\dbch\af1\loch\f1\fs48 do-while}{\dbch\af1\loch\f1\fs48  loop can be used to replace a }{\dbch\af1\loch\f1\fs48 while}{\dbch\af1\loch\f1\fs48  loop if the loop body has to be executed before testing the continuation condition.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 Nested}{\b\dbch\af1\loch\f1\fs72\cf1  Loops\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Problem: Write a program that uses }{\dbch\af1\loch\f4\fs48 nested for}{\dbch\af1\loch\f1\fs48  loops to print a multiplication table.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 MultiplicationTable\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Minimizing Numerical Errors\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Numeric errors involving floating-point numbers are inevitable. This section discusses how to minimize such errors through an example.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Here is an example that sums a series that starts with 0.01 and ends with 1.0. The numbers in the series will increment by 0.01, as follows: 0.01 + 0.02 + 0.03 and so on.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestSum\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Finding the Greatest Common Divisor\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Problem: Write a program that prompts the user to enter two positive integers and finds their greatest common divisor.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Solution: Suppose you enter two integers 4 and 2, their greatest common divisor is 2. Suppose you enter two integers 16 and 24, their greatest common divisor is 8. So, how do you find the greatest common divisor? Let the two input integers be n1 and n2. You know number 1 is a common divisor, but it may not be the greatest commons divisor. So you can check whether k (for k = 2, 3, 4, and so on) is a common divisor for n1 and n2, until k is greater than n1 or n2.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs44 GreatestCommonDivisor\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Predicting the Future Tuition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Problem: Suppose that the tuition for a university is $10,000 this year and tuition increases 7% every year. In how many years will the tuition be doubled?\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 FutureTuition\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Predicating the Future Tuition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 double}{\dbch\af1\loch\f4\fs44  tuition = 10000; }{\b\dbch\af1\loch\f4\fs44 int}{\dbch\af1\loch\f4\fs44  year = 0 // Year 0\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 tuition = tuition * 1.07; year++; // Year 1\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 tuition = tuition * 1.07; year++; // Year 2\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 tuition = tuition * 1.07; year++; // Year 3\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 ...\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Case Study: Converting Decimals to Hexadecimals\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Hexadecimals are often used in computer systems programming (see Appendix F for an introduction to number systems). How do you convert a decimal number to a hexadecimal number? To convert a decimal number }{\i\dbch\af1\loch\f1\fs44 d}{\dbch\af1\loch\f1\fs44  to a hexadecimal number is to find the hexadecimal digits\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 such that\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 These hexadecimal digits can be found by successively dividing d by 16 until the quotient is 0. The remainders are\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs44 Dec2Hex}{\ul\dbch\af1\loch\f1\fs44 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Monte Carlo Simulation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 The Monte Carlo simulation refers to a technique that uses random numbers and probability to solve problems. This method has a wide range of applications in computational mathematics, physics, chemistry, and finance. This section gives an example of using the\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Monto Carlo simulation for estimating\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 can be approximated as\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\ul\dbch\af1\loch\f1\fs40 MonteCarloSimulation\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Using }{\b\dbch\af1\loch\f4\fs72\cf1 break}{\b\dbch\af1\loch\f1\fs72\cf1  and }{\b\dbch\af1\loch\f4\fs72\cf1 continue\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Examples for using the }{\dbch\af1\loch\f4\fs48 break}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 continue}{\dbch\af1\loch\f1\fs48  keywords:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 TestBreak.java\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 TestContinue.java\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestBreak\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestContinue\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 break\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 continue\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Guessing Number Problem Revisited\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Here is a program for guessing a number. You can rewrite it using a }{\b\dbch\af1\loch\f4\fs48 break}{\dbch\af1\loch\f1\fs48  statement.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 GuessNumberUsingBreak\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Checking Palindrome\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 A string is a palindrome if it reads the same forward and backward. The words \'93mom,\'94 \'93dad,\'94 and \'93noon,\'94 for instance, are all palindromes.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 The problem is to write a program that prompts the user to enter a string and reports whether the string is a palindrome. One solution is to check whether the first character in the string is the same as the last character. If so, check whether the second character is the same as the second-to-last character. This process continues until a mismatch is found or all the characters in the string are checked, except for the middle character if the string has an odd number of characters.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs40 Palindrome\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Displaying Prime Numbers\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Problem: Write a program that displays the first 50 prime numbers in five lines, each of which contains 10 numbers. An integer greater than 1 is }{\b\dbch\af1\loch\f1\fs44 prime}{\dbch\af1\loch\f1\fs44  if its only positive divisor is 1 or itself. For example, 2, 3, 5, and 7 are prime numbers, but 4, 6, 8, and 9 are not.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Solution: The problem can be broken into the following tasks:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 For number = 2, 3, 4, 5, 6, ..., test whether the number is prime.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 Determine whether a given number is prime.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 Count the prime numbers.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 Print each prime number, and print 10 numbers per line.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs44 PrimeNumber}{\ul\dbch\af1\loch\f1\fs44 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Debugging Loops in I}{\b\dbch\af1\loch\f1\fs2\cf1  }{\b\dbch\af1\loch\f1\fs72\cf1 D}{\b\dbch\af1\loch\f1\fs2\cf1  }{\b\dbch\af1\loch\f1\fs72\cf1 E Tools\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copyright\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li160 {\b\dbch\af1\loch\f1\fs32 This work is protected by United States copyright laws and is provided solely for the use of instructors in teaching their courses and assessing student learning. Dissemination or sale of any part of this work (including on the World Wide Web) will destroy the integrity of the work and is not permitted. The work and materials from it should never be made available to students except by instructors using the accompanying text in their classes. All recipients of this work are expected to abide by these restrictions and to honor the intended pedagogical purposes and the needs of other instructors who rely on these materials.\par 
+}
+}
