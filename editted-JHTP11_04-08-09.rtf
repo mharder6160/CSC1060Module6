@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Calibri;}
+{\f2\fnil\fcharset0\fprq0 Cambria;}
+{\f3\fnil\fcharset0\fprq0 Consolas;}
+{\f4\fnil\fcharset2\fprq0 Wingdings 3;}
+{\f5\fnil\fcharset0\fprq0 Verdana;}
+}
+{\colortbl;
+\red51\green128\blue230;
+\red70\green70\blue70;
+\red36\green181\blue161;
+\red0\green0\blue255;
+\red0\green0\blue0;
+\red0\green38\blue204;
+\red18\green138\blue255;
+\red0\green0\blue0;
+\red0\green0\blue0;
+\red0\green176\blue80;
+}
+{\stylesheet
+{\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\level1 heading 1;}
+{\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\level2 heading 2;}
+{\s3\li1353\fi-360\kerning24\f2\fs42\cf8\lang1033\level3 heading 3;}
+{\s4\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\level4 heading 4;}
+{\s5\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\level5 heading 5;}
+{\s6\li2520\fi-360\kerning24\cf8\lang1033\level6 heading 6;}
+{\s7\li2880\fi-360\kerning24\fs32\cf8\lang1033\level7 heading 7;}
+{\s8\li3240\fi-360\kerning24\fs32\cf8\lang1033\level8 heading 8;}
+{\s9\li3600\fi-360\kerning24\fs32\cf8\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0\qc {\b\shad\f1\fs96\cf1 Chapter 4\line Control Statements: Part I; Assignment, ++ and -- Operators\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li0\ri101\fi0\qc {\f2\fs54\cf2 Java How to Program, 11/e\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li0\ri101\fi0\qc {\f2\fs48\cf2 Questions? }{\f2\fs48\cf2 E-mail paul.deitel@deitel.com}{\f2\fs54\cf2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.8}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f3\fs72\cf1 while}{\b\shad\f1\fs72\cf1  Iteration Statement\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf4 Iteration statement\'97}{\f2\fs54\cf5 repeats an action while a condition remains true. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Pseudocode\par 
+}\pard\plain\ltrpar\s4\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\li1353 {\i\f2\fs42\cf6 \tab While there are more items on my shopping list\line }{\f3\fs48\cf5   }{\i\f2\fs42\cf6 Purchase next item and cross it off my list\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The iteration statement\'92s body may be a single statement or a block. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Eventually, the condition will become false. At this point, the iteration terminates, and the first statement after the iteration statement executes.\par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.8}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f3\fs72\cf1 while}{\b\shad\f1\fs72\cf1  Iteration Statement (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs34 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs34{\pntxtb \uc1\u-3971?}}{\f2\fs50\cf5 Example of Java\'92s }{\f3\fs50\cf4 while}{\f2\fs50\cf5  }{\f2\fs50\cf4 iteration statement}{\f2\fs50\cf5 : find the first power of 3 larger than 100. Assume }{\f3\fs50\cf5 int}{\f2\fs50\cf5  variable }{\f3\fs50\cf5 product}{\f2\fs50\cf5  is initialized to }{\f3\fs50\cf5 3}{\f2\fs50\cf5 . \par 
+}\pard\plain\ltrpar\s4\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\li1353 {\f3\cf4 \tab while}{\f3\cf5  (product <= }{\f3\cf7 100}{\f3\cf5 )\line    product = }{\f3\cf7 3}{\f3\cf5  * product;\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs34 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs34{\pntxtb \uc1\u-3971?}}{\f2\fs50\cf5 Each iteration multiplies }{\f3\fs50\cf5 product}{\f2\fs50\cf5  by 3, so }{\f3\fs50\cf5 product}{\f2\fs50\cf5  takes on the values 9, 27, 81 and 243 successively. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs34 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs34{\pntxtb \uc1\u-3971?}}{\f2\fs50\cf5 When }{\f3\fs50\cf5 product}{\f2\fs50\cf5  becomes 243, }{\f3\fs50\cf5 product}{\f2\fs50\cf5  }{\f3\fs50\cf5 <=}{\f2\fs50\cf5  }{\f3\fs50\cf5 100}{\f2\fs50\cf5  becomes false. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs34 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs34{\pntxtb \uc1\u-3971?}}{\f2\fs50\cf5 Iteration terminates. The final value of }{\f3\fs50\cf5 product}{\f2\fs50\cf5  is 243. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs34 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs34{\pntxtb \uc1\u-3971?}}{\f2\fs50\cf5 Program execution continues with the next statement after the }{\f3\fs50\cf5 while}{\f2\fs50\cf5  statement.\par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.8}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f3\fs72\cf1 while}{\b\shad\f1\fs72\cf1  Iteration Statement (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\cf5 UML Activity Diagram for a }{\b\i\f3\fs40\cf5 while}{\b\i\f2\cf5  Statement\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs31 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs31{\pntxtb \uc1\u-3971?}}{\f2\cf5 The UML activity diagram in Fig.\'a04.6 illustrates the flow of control in the preceding }{\f3\cf5 while}{\f2\cf5  statement. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs31 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs31{\pntxtb \uc1\u-3971?}}{\f2\cf5 The UML represents both the }{\f2\cf4 merge symbol}{\f2\cf5  and the decision symbol as diamonds. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs31 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs31{\pntxtb \uc1\u-3971?}}{\f2\cf5 The merge symbol joins two flows of activity into one. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\f2\cf5 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.8}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f3\fs72\cf1 while}{\b\shad\f1\fs72\cf1  Iteration Statement (Cont.)}{\b\shad\f2\fs72\cf2 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 The decision and merge symbols can be distinguished by the number of \'93incoming\'94 and \'93outgoing\'94 transition arrows. \par 
+}\pard\plain\ltrpar\s3\li1353\fi-360\kerning24\f2\fs42\cf8\lang1033\li978 {\pntext\pard\plain\f5\fs48 \uc1\u9702?\tab}{\*\pn\pnlvlblt\pnf5\pnfs48{\pntxtb \uc1\u9702?}}{\f2\fs48\cf5 A decision symbol has one transition arrow pointing to the diamond and two or more pointing out from it to indicate possible transitions from that point. Each transition arrow pointing out of a decision symbol has a guard condition next to it. \par 
+}\pard\plain\ltrpar\s3\li1353\fi-360\kerning24\f2\fs42\cf8\lang1033\li978 {\pntext\pard\plain\f5\fs48 \uc1\u9702?\tab}{\*\pn\pnlvlblt\pnf5\pnfs48{\pntxtb \uc1\u9702?}}{\f2\fs48\cf5 A merge symbol has two or more transition arrows pointing to the diamond and only one pointing from the diamond, to indicate multiple activity flows merging to continue the activity. None of the transition arrows associated with a merge symbol has a guard condition.\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\f2\fs54\cf9 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\ri10\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration}{\b\i\shad\f2\fs72\cf5 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\i\f2\fs48\cf5 A class of ten students took a quiz. The grades (integers in the range 0-100) for this quiz are available to you. Determine the class average on the quiz.}{\f2\fs48\cf5 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 The class average is equal to the sum of the grades divided by the number of students. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 The algorithm for solving this problem on a computer must input each grade, keep track of the total of all grades input, perform the averaging calculation and print the result. \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\ri10\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration}{\b\i\shad\f2\fs72\cf5 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\fs48\cf5 Pseudocode Algorithm with Counter-Controlled Iteration\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 Use }{\f2\fs48\cf4 counter-controlled iteration}{\f2\fs48\cf5  to input the grades one at a time. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 A variable called a }{\f2\fs48\cf4 counter}{\f2\fs48\cf5  (or }{\f2\fs48\cf4 control variable}{\f2\fs48\cf5 ) controls the number of times a set of statements will execute. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 Counter-controlled iteration is often called }{\f2\fs48\cf4 definite iteration}{\f2\fs48\cf5 , because the number of iterations is known }{\i\f2\fs48\cf5 before}{\f2\fs48\cf5  the loop begins executing. \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 A }{\f2\fs54\cf4 total}{\f2\fs54\cf5  is a variable used to accumulate the sum of several values. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 A }{\f2\fs54\cf4 counter}{\f2\fs54\cf5  is a variable used to count. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Variables used to store totals are normally initialized to zero before being used in a program.\par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\fs54\cf5 Local Variables in Method }{\b\i\f3\fs48\cf5 main}{\b\i\f3\fs54\cf5 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Variables declared in a method body are local variables and can be used only from the line of their declaration to the closing right brace of the method declaration.\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 A local variable\'92s declaration must appear }{\i\f2\fs54\cf5 before}{\f2\fs54\cf5  the variable is used in that method. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 A local variable cannot be accessed outside the method in which it\'92s declared. \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\fs54\cf5 Notes on Integer Division and Truncation\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The program\'92s output indicates that the sum of the grade values in the sample execution is 846, which, when divided by 10, should yield the floating-point number 84.6. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The result of the calculation }{\f3\fs54\cf5 total}{\f2\fs54\cf5 \'a0}{\f3\fs54\cf5 /}{\f2\fs54\cf5 \'a0}{\f3\fs54\cf5 10}{\f2\fs54\cf5  (Fig.\'a04.8) is the integer 84, because }{\f3\fs54\cf5 total}{\f2\fs54\cf5  and }{\f3\fs54\cf5 10}{\f2\fs54\cf5  are both integers. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Dividing two integers results in }{\f2\fs54\cf4 integer division}{\f2\fs54\cf5 \'97any fractional part of the calculation is }{\f2\fs54\cf4 truncated }{\f2\fs54\cf5 (i.e., }{\i\f2\fs54\cf5 lost}{\f2\fs54\cf5 ). \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033 {\f2 \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\fs54\cf5 A Note About Arithmetic Overflow \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 In Fig. 4.8, the following statement added each }{\f3\fs48\cf5 grade}{\f2\fs54\cf5  entered by the user to the }{\f3\fs48\cf5 total}{\f2\fs54\cf5 \par 
+}\pard\plain\ltrpar\s4\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\li950\fi0 {\f3\fs42\cf5 total = total + grade; }{\f3\fs42\cf10 // add grade to total\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Even this simple statement has a }{\i\f2\fs54\cf5 potential}{\f2\fs54\cf5  problem\'97adding the integers could result in a value that\'92s }{\i\f2\fs54\cf5 too large}{\f2\fs54\cf5  to store in an }{\f3\fs48\cf5 int}{\f2\fs54\cf5  variable. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 This is known as }{\f2\fs54\cf4 arithmetic overflow }{\f2\fs54\cf5 and causes }{\i\f2\fs54\cf5 undefined behavior}{\f2\fs54\cf5 , which can lead to unintended results. \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Figure 2.7\'92s }{\f3\fs48\cf5 Addition}{\f2\fs54\cf5  program had the same issue when calculating the sum of two }{\f3\fs48\cf5 int}{\f2\fs54\cf5  values entered by the user:  \par 
+}\pard\plain\ltrpar\s3\li1353\fi-360\kerning24\f2\fs42\cf8\lang1033\li978 {\pntext\pard\plain\f5\fs56 \uc1\u9702?\tab}{\*\pn\pnlvlblt\pnf5\pnfs56{\pntxtb \uc1\u9702?}}{\f3\fs56\cf5 int}{\f3\fs56\cf5  sum = number1 + number2; \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The maximum and minimum values that can be stored in an }{\f3\fs48\cf5 int}{\f2\fs54\cf5  variable are represented by the constants }{\f3\fs48\cf5 MIN_VALUE}{\f2\fs54\cf5  and }{\f3\fs48\cf5 MAX_VALUE}{\f2\fs54\cf5 , respectively, which are defined in class }{\f3\fs48\cf5 Integer}{\f2\fs54\cf5 . \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 There are similar constants for the other integral types and for floating-point types. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 Each primitive type has a corresponding class type in package }{\f3\fs48\cf5 java.lang}{\f2\fs54\cf5 . \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 It\'92s considered a good practice to ensure, }{\i\f2\fs54\cf5 before}{\f2\fs54\cf5  you perform arithmetic calculations, that they will }{\i\f2\fs54\cf5 not}{\f2\fs54\cf5  overflow. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The code for doing this is shown on the CERT website }{\f3\fs56\cf5 www.securecoding.cert.org}{\f2\fs54\cf5 \'97just search for guideline \'93NUM00-J.\'94 \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 The code for doing this is shown on the CERT website: \par 
+}\pard\plain\ltrpar\s3\li1353\fi-360\kerning24\f2\fs42\cf8\lang1033\li978 {\pntext\pard\plain\f5\fs46 \uc1\u9702?\tab}{\*\pn\pnlvlblt\pnf5\pnfs46{\pntxtb \uc1\u9702?}}{\f2\fs46\cf5 http://www.securecoding.cert.org\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs37 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs37{\pntxtb \uc1\u-3971?}}{\f2\fs54\cf5 In industrial-strength code, you should perform checks like these for all calculations.  \par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li173\fi0 {\b\i\f2\fs48\cf5 A Deeper Look at Receiving User Input \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 Any time a program receives input from the user, various problems might occur. For example, in the following statement we assume that the user will enter an integer grade in the range 0 to 100\par 
+}\pard\plain\ltrpar\s4\li1800\fi-360\kerning24\f2\fs38\cf8\lang1033\li950\fi0 {\f3\fs40\cf4 int}{\f3\fs40\cf4  }{\f3\fs40\cf5 grade = }{\f3\fs40\cf5 input.nextInt}{\f3\fs40\cf5 (); }{\f3\fs40\cf10 // input next grade\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 However, the person entering a grade could enter an integer less than 0, an integer greater than 100, an integer outside the range of values that can be stored in an }{\f3\fs48\cf5 int}{\f2\fs48\cf5  variable, a number containing a decimal point or a value containing letters or special symbols that\'92s not even an integer.\par 
+}\pard\plain\ltrpar\s1\li575\fi-403\kerning24\f2\fs54\cf8\lang1033\li0\fi0 {\b\shad\loch\f1\fs72\cf3 4.9}{\b\shad\f1\fs72\cf3 \'a0\'a0}{\b\shad\f1\fs72\cf1 Formulating Algorithms: Counter-Controlled Iteration (Cont.)\par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 To ensure that inputs are valid, industrial-strength programs must test for all possible erroneous cases. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 A  program that inputs grades should }{\f2\fs48\cf4 validate}{\f2\fs48\cf5  the grades by using }{\f2\fs48\cf4 range}{\f2\fs48\cf5  }{\f2\fs48\cf4 checking}{\f2\fs48\cf5  to ensure that hey are values from 0 to 100. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 You can then ask the user to reenter any value that\'92s out of range. \par 
+}\pard\plain\ltrpar\s2\li978\fi-360\kerning24\f2\fs46\cf8\lang1033\li575\fi-403 {\pntext\pard\plain\f4\fs33 \uc1\u-3971?\tab}{\*\pn\pnlvlblt\pnf4\pnfs33{\pntxtb \uc1\u-3971?}}{\f2\fs48\cf5 If a program requires inputs from a specific set of values (e.g., }{\f2\fs48\cf5 nonsequential}{\f2\fs48\cf5  product codes), you can ensure that each input matches a value in the set. \par 
+}
+}
