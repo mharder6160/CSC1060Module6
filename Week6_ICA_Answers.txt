@@ -1,0 +1,320 @@
+Module 6 Programming Project Quiz (25 Points) - Each question is worth 1 point up to 25
+
+Name _______________________________________________________________________
+
+Select most correct answer. 
+
+Extra question to allow for incorrect answers and allow to maximize points.  
+
+Question 1
+
+Based on the assignment's game flow, which type of loop is most suitable for allowing the user to play multiple rounds until they decide to stop?
+
+A. A for loop
+
+*B. A do-while loop
+
+C. A nested loop
+
+D. A switch statement loop
+
+Question 2
+
+In the game, if a 'yes' or 'no' response from the user is required for input validation, what is the best approach to ensure valid input?
+
+A. A simple if-else statement that checks for "yes" or "no".
+
+*B. A while loop that continues to prompt the user as long as the input is not "yes" or "no".
+
+C. A for loop that prompts the user a fixed number of times.
+
+D. A continue statement inside a do-while loop.
+
+Question 3
+
+Based on the sample output, what are the three counters you must include in your program?
+
+A. Player 1 wins, Player 2 wins, and total games played.
+
+*B. Player 1 wins, Player 2 wins, and ties.
+
+C. Player 1 wins, Player 2 losses, and ties.
+
+D. Player 1 wins, Player 2 wins, and total wins.
+
+Question 4
+
+To convert a randomly generated integer from 1 to 13 into a card rank string (e.g., 1 to 'Ace', 11 to 'Jack'), which control structure is most appropriate?
+
+A. A simple if-else statement.
+
+B. A for loop with a series of if statements.
+
+*C. A switch statement.
+
+D. A while loop.
+
+Question 5
+
+What is the primary purpose of using a while loop for input validation in this program?
+
+A. To reduce the amount of code needed.
+
+B. To ensure that the loop runs at least once.
+
+*C. To repeat the prompt until valid input is received.
+
+D. To display a summary of wins at the end.
+
+Question 6
+
+If you are using a single while loop to run the game, how can you ensure the program terminates when the user enters "no"?
+
+*A. By placing a break statement inside an if block that checks for "no".
+
+B. By changing the loop condition from true to false.
+
+C. By using a continue statement.
+
+D. By adding return at the end of the loop.
+
+Question 7
+
+Which of the following is an example of a counter variable that would be used in this program?
+
+A. A string variable holding the player's name.
+
+B. A double variable representing the odds of winning.
+
+C. A boolean variable to track if it is a tie.
+
+*D. An integer variable to track the number of Player 1 wins.
+
+Question 8
+
+In the game logic, what would happen if the Ace was not set to the highest-ranking card?
+
+*A. The Ace would be the lowest ranking card by default.
+
+B. The program would generate a syntax error.
+
+C. The program would not be able to generate an Ace card.
+
+D. The program would enter an infinite loop.
+
+Question 9
+
+What is the primary function of the Scanner class in this program?
+
+A. To generate a random card for each player.
+
+B. To display the cards on the screen.
+
+*C. To read the user's input from the console.
+
+D. To store the number of wins and ties.
+
+Question 10
+
+In the context of the game, what is a likely consequence of a logical error in the win/loss comparison logic?
+
+A. The program will not compile.
+
+*B. The wrong player will be declared the winner or loser.
+
+C. The program will crash or produce a runtime error.
+
+D. The program will run forever in an infinite loop.
+
+Question 11
+
+If the user's input is stored in a String variable response, what is the correct way to check if the user entered 'yes' or 'no' while ignoring case?
+
+A. (response == "yes") || (response == "no")
+
+*B. response.equalsIgnoreCase("yes") || response.equalsIgnoreCase("no")
+
+C. response.equals("yes") && response.equals("no")
+
+D. response.matches("yes" || "no")
+
+Question 12
+
+If you had to check for a tie first, which Java conditional statement would be the most efficient to place at the top of your card comparison logic?
+
+A. A nested for loop.
+
+*B. A simple if statement.
+
+C. A while loop.
+
+D. A switch statement.
+
+Question 13
+
+Which of the following is an example of an invalid loop header in Java?
+
+A. for (int i = 0; i < 10; i++)
+
+B. while (count < 10);
+
+C. do { ... } while (true);
+
+*D. for (int i = 0, i < 10, i++)
+
+Question 14
+
+If you use a while loop to repeatedly ask the user to play again, but the condition is always true, how could you still exit the loop?
+
+A. By changing the condition to false inside the loop.
+
+*B. By adding a return statement in the loop body.
+
+C. By using a continue statement.
+
+D. By using a while loop inside the current loop.
+
+Question 15
+
+In the game, if you are tracking wins and ties, what data type should your counters be?
+
+A. double
+
+B. boolean
+
+C. String
+
+*D. int
+
+Question 16
+
+If you have a loop that continues until the user enters 'no', and you use a boolean flag called playing, what should the loop condition look like?
+
+A. while (playing == "yes")
+
+*B. while (playing)
+
+C. while (playing = true)
+
+D. while (playing != "no")
+
+Question 17
+
+Which of the following describes a logical error in the card game simulation?
+
+A. Forgetting to declare the Scanner variable.
+
+*B. The program always declares Player 1 as the winner, even when their card is lower.
+
+C. Using for (int i = 0, i < 10, i++) instead of for (int i = 0; i < 10; i++).
+
+D. Omitting the import java.util.Scanner; statement.
+
+Question 18
+
+If the while loop condition is (userResponse.equals("yes")), what happens if the user enters Yes?
+
+A. The program will crash.
+
+B. The loop will correctly continue.
+
+C. The loop will correctly continue and the program will not stop.
+
+*D. The loop will terminate due to case sensitivity.
+
+Question 19
+
+When generating a random card for each player, which of the following best describes the principle you should use to ensure fairness?
+
+A. Use a nested loop to generate the cards.
+
+*B. Use two separate random number generations, one for each player.
+
+C. Use a single random number and divide it by 2 to get two cards.
+
+D. Use a for loop to generate a single card for both players.
+
+Question 20
+
+What is the result of the expression 1.0 * i / (i + 1)?
+
+A. Integer division.
+
+*B. Floating-point division.
+
+C. A syntax error.
+
+D. The result of i divided by i + 1 with the fractional part truncated.
+
+Question 21
+
+If your for loop for card ranking goes from 1 to 13 to match card ranks, what is a crucial decision to make to ensure the Ace is the highest?
+
+A. Change the loop to go from 13 to 1.
+
+*B. Assign Ace to the number 1 and handle it as a special case in your comparison logic.
+
+C. Assign Ace to the number 1 and King to 13.
+
+D. Assign Ace to the number 14 to make it higher than the King, which is 13.
+
+Question 22
+
+What is the purpose of the continue statement in a loop?
+
+A. To stop the loop entirely.
+
+*B. To skip the current iteration and move to the next.
+
+C. To return to the start of the program.
+
+D. To display an error message and then proceed.
+
+Question 23
+
+In the game, if a tie occurs, how should you update the counters?
+
+*A. Increment the ties counter by one.
+
+B. Increment the player 1 wins counter by one.
+
+C. Increment the player 2 wins counter by one.
+
+D. Decrement both player's wins and the ties counters.
+
+
+Question 24
+
+What would be the effect of placing the Scanner object's creation inside the game loop?
+
+A. It would cause a syntax error.
+
+*B. It would be inefficient and create unnecessary overhead.
+
+C. It would be more efficient because the object is created only when needed.
+
+D. It would cause a logical error and the program would not run.
+
+Question 25
+
+The sample output shows the program handling invalid input by re-prompting the user. Which of the following statements about this is true?
+
+A. This requires a for loop that runs a fixed number of times.
+
+*B. This requires a loop that continues until valid input is received.
+
+C. This requires an if-else if statement to handle all possible invalid inputs.
+
+D. This requires a do-while loop with a break statement.
+
+Question 26
+
+The assignment requires a Game Summary to be displayed at the end. Where should the code for displaying this summary be placed?
+
+A. Inside the main game loop, so it updates after every round.
+
+*B. After the main game loop terminates.
+
+C. Inside an if statement at the beginning of the program.
+
+D. In a separate method that is called at the beginning of the program.
